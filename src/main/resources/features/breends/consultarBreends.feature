@@ -13,7 +13,7 @@ Feature: Consultar Breends
       | senha   | 123456 |
 
   Scenario Outline: Validar consultar breends com sucesso
-    #Não foi incluido etava de given devido a não ter uma pré-condição
+    #Não foi incluido etapa de given devido a não ter uma pré-condição
     When consulto as raças
       | limit | <limit> |
     Then valido que o status seja <statusCode>
@@ -29,7 +29,7 @@ Feature: Consultar Breends
       | true  | 200        | 25                  |
 
   Scenario Outline: Validar consultar breends com erro
-    #Não foi incluido etava de given devido a não ter uma pré-condição
+    #Não foi incluido etapa de given devido a não ter uma pré-condição
     When consulto as raças
       | limit | <limit> |
     Then valido que o status seja <statusCode>
